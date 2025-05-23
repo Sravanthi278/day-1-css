@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .box4 {
+      width: 300px;
+      height: 300px;
+      border: 5px solid red;
+      background-color: pink;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+
+    .box3 {
+      width: 220px;
+      height: 220px;
+      border: 5px solid orange;
+      background-color: blueviolet;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+
+    .box2 {
+      width: 150px;
+      height: 150px;
+      border: 5px solid green;
+      background-color: black;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+
+    .box1 {
+      width: 80px;
+      height: 80px;
+      border: 5px solid blue;
+      background-color: greenyellow;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+    }
+
+    .label {
+      position: absolute;
+      top: 5px;
+      left: 5px;
+      font-size: 12px;
+      font-weight: bold;
+      color: white;
+      background: rgba(0,0,0,0.4);
+      padding: 2px 6px;
+      border-radius: 4px;
+    }
+
+    .box4 .label { color: red; background: none; }
+    .box3 .label { color: orange; background: none; }
+    .box2 .label { color: lime; background: none; }
+    .box1 .label { color: blue; background: none; }
+  </style>
+</head>
+<body>
+
+  <div class="box4">
+    <div class="label">margin</div>
+    <div class="box3">
+      <div class="label">border</div>
+      <div class="box2">
+        <div class="label">padding</div>
+        <div class="box1">
+          <div class="label">content</div>
+          content
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
